@@ -1,0 +1,51 @@
+/*
+display:flex
+float
+position
+
+/*float
+div {
+    float: left;
+    width: 300px;
+    margin : 10px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-width: 1px 2px 10px 2px solid #666;
+}
+
+img {
+    width: 100%
+}
+*/
+/* flex
+body {
+    display:-webkit-flex;
+    display:-ms-flex;
+    display:flex;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+div {
+    flex:1;
+    margin: 10px 5px 10px 5px;
+    max-width: 400px;
+    min-width: 100px;
+
+
+}
+
+img {
+    width:100%
+}
+*/
+
+body {
+    margin-top: 460px;
+}
+.layout-1 {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+}

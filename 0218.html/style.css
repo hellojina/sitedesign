@@ -1,0 +1,42 @@
+body {
+    display:-webkit-flex;
+    display:-ms-flex;
+    display:flex;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+img {
+    width:100%
+}
+
+
+div {
+    flex:1;
+    margin: 0px;
+    max-width: 400px;
+    min-width: 100px;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.image01 {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+.image02 {
+    position: absolute;
+    top: 300px;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+div:hover .image02 {
+    top:0;
+}

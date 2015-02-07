@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+}
+
+div {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+
+}
+.top {
+    height: 1000px;
+    background-image: url(01.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    -webkit-animation: bg 30s infinite;
+    animation: bg 30s infinite;
+}
+
+@-webkit-keyframes bg {
+    0% {
+        background-image: url(01.png);
+        background-size: 100%;
+    }
+    25% {
+        background-image: url(02.png);
+        background-size: 100%;
+    }
+
+    50% {
+        background-image: url(03.png);
+        background-size: 100%;
+    }
+
+    75% {
+        background-image: url(04.png);
+        background-size: 100%;
+    }
+
+    100% {
+        background-image: url(01.png);
+        background-size: 100%;
+    }
+}
+
+.menu{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    right: 50%;
+}
+
+
+.line1 {
+    position: fixed;
+    width: 25px;
+    height: 2px;
+    background-color: red;
+    top: 20px;
+    transition: all 1s ease;
+    z-index:1;
+}
+
+.line2 {
+    position: fixed;
+    width: 25px;
+    height: 2px;
+    background-color: red;
+    top: 26px;
+    transition: all 2s ease;
+    z-index:1;
+}
+
+.line3 {
+    position: fixed;
+    width: 25px;
+    height: 2px;
+    background-color: red;
+    top: 32px;
+    transition: all 3s ease;
+    z-index:1;
+}
+
+.overlay_box {
+    position: fixed;
+    width: 50px;
+    height: 30px;
+    top: 20px;
+    z-index:2;
+}
+
+.textmenu {
+    text-decoration:underline;
+    text-decoration-color: #ff6759;
+    position: fixed;
+
+    width: 500px;
+    height: 50px;
+    top: -50px;
+    left: 50%;
+    right: 50%;
+    transition: all 2s ease;
+    z-index: 3;
+}
+
+.textitem {
+    display: inline;
+    margin: 10px;
+}
+
+.overlay_box:hover ~ .line1 {
+    top:-500px;
+}
+
+.overlay_box:hover ~ .line2 {
+    top:-500px;
+}
+
+.overlay_box:hover ~ .line3 {
+    top:-500px;
+}
+
+.overlay_box:hover ~ .textmenu {
+    top:26px;
+}
+
+
+
